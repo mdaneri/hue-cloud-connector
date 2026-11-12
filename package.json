@@ -1,0 +1,13 @@
+{
+  "name": "private-hue-cloud-connector",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Offline foundation for an owner-only Philips Hue remote connector",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test test/discovery.test.mjs test/oauth.test.mjs test/secrets.test.mjs test/worker.test.mjs",
+    "build": "node scripts/build.mjs",
+    "demo": "node scripts/demo.mjs"
+  }
+}
